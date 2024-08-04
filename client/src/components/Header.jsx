@@ -2,8 +2,11 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <header>
+      <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
+        <span className='text-slate-500'>Heli</span>
+        <span className='text-slate-700'>Estate</span>
+      </h1>
+    </header>
   )
 }
