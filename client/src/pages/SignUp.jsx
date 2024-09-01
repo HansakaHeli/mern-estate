@@ -30,7 +30,7 @@ export default function SignUp() {
       }
     );
     const data = await res.json(); // Parse the response from the server as JSON.
-    if(data.success ===false){
+    if(data.success === false){
       setError(data.message);
       setLoading(false);
       return;
