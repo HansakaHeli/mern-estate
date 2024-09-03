@@ -15,6 +15,10 @@ export default function OAuth() {
             const provider = new GoogleAuthProvider();
             const auth = getAuth(app);
 
+            // provider.setCustomParameters({
+            //     prompt: 'select_account' // Forces account chooser to appear
+            // });
+
             const result = await signInWithPopup(auth, provider);
 
             //console.log(result);
